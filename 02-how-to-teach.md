@@ -29,20 +29,20 @@ Total: 50–60 minutes, and only ~30 of it is "lessons." You can split it across
 
 ## Reading: from letter names to reading words
 
-Reading has four steps. Do them in order. Most 4-year-olds who know the alphabet can get to step 4 in about 3 months at this pace, but **some need 6**. Both are normal.
+Reading has four steps. Steps 1–3 run together from Week 1 (learn a few sounds, blend them into words, repeat with the next group). Most 4-year-olds who know the alphabet get to step 4 in about 2–3 months at this pace, but **some need 6**. Both are normal.
 
-### Step 1 — Letter sounds (Month 1)
+### Step 1 — Letter sounds (Weeks 1–6, one group a week)
 
 She knows "bee". She needs /b/.
 
 - **Say sounds cleanly, with no "uh" at the end.** "mmm" not "muh", "sss" not "suh", "t" as a quick puff not "tuh". This matters enormously for blending later: "muh-a-tuh" never turns into "mat", but "mmm-aaa-t" does.
 - **Teach short vowels first** (a as in apple, e as in egg, i as in igloo, o as in octopus, u as in umbrella). One sound per letter for now; c = /k/, g = /g/ hard, y = /y/.
-- **Use a sequence that makes words early.** Don't go A to Z. Use: **s, a, t, p, i, n** (week 1–2), then **m, d, g, o, c, k** (week 2–3), then **e, u, r, h, b, f, l** (week 3–4), then **j, v, w, x, y, z, q** (week 4–5). With just the first six sounds she can already read *sat, pat, tap, pin, tin, sip, nap, tan*.
-- **Lowercase letters.** Books are 95% lowercase. Use lowercase magnetic letters and lowercase cards. She'll map capitals over easily.
-- **Attach each sound to an action or picture** (s = snake slithering hand, t = tapping finger, m = rubbing tummy "mmm"). Actions lock sounds in memory. The Jolly Phonics actions are free to look up on YouTube.
+- **Teach letters in small groups and blend words right away** (the *ABC See, Hear, Do* approach). Group 1 is **A, B, C, T, M**; with just those she reads *cat, mat, bat, tab, cab, at, am*. One new letter a day, then words from that group all week. The full group order is in `03-three-month-plan.md`; if your book's groups differ, follow the book.
+- **Capitals first**, like the book's Level 1 (it also matches handwriting, which starts with capitals). Use capital magnetic letters now; add lowercase in Week 11 by matching each small letter to its capital.
+- **Attach each sound to the book's picture and hand motion.** Do the motion every time you say the sound; actions lock sounds in memory.
 - **2–3 minutes of review daily**: flash the letters she knows, she says the sound. Make it a race, a whisper game, a "trick the puppet" game.
 
-### Step 2 — Hearing sounds blend (oral blending, Month 1, no letters)
+### Step 2 — Hearing sounds blend (oral blending, alongside Step 1, no letters)
 
 Before she blends printed letters, she must hear that /k/ /a/ /t/ is *cat*. This is done with **no letters at all**, just voices.
 
@@ -53,7 +53,7 @@ Before she blends printed letters, she must hear that /k/ /a/ /t/ is *cat*. This
 
 She's ready for step 3 when she can hear "s-u-n" and say "sun" most of the time.
 
-### Step 3 — Blending printed words (Month 2)
+### Step 3 — Blending printed words (starts Week 1, after the first letter group)
 
 Now put the letters in front of her.
 
@@ -62,10 +62,10 @@ Now put the letters in front of her.
 - **Successive blending** if that's hard: blend the first two, then add the third. "sa... sat."
 - **Word families:** change one letter at a time. *sat → mat → map → mop → top → tip.* One letter swap per turn keeps it easy and a little magical.
 - **CVC words only** (consonant-vowel-consonant): cat, sun, pig, dog, bed. No "silent e", no "th/sh", no "ee" yet. That's for later.
-- **Start with short-a words** (at, an, ap, am families), then i, o, u, e. Short-e is the hardest to hear; do it last.
+- **Use only the letters she has so far.** Week 1 words come from A B C T M; each new group adds new words. Short-e (Week 3) is the hardest vowel to hear, so lean on the hand motion.
 - **Tiny doses:** 3–6 words a session. Five minutes. Done.
 
-### Step 4 — Reading little books and sentences (Month 3)
+### Step 4 — Reading little books and sentences (Weeks 6–12)
 
 - Start **Bob Books Set 1** when she can blend most CVC words with a little help. Book 1 is "Mat sat." She'll read a whole book in the first sitting and be *very* proud.
 - **Introduce a few "heart words"** (sight words that don't follow the rules yet): *the, a, I, is, to, and.* Just tell her: "This one we know by heart: *the*." Two per week max.

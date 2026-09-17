@@ -11,7 +11,8 @@ prices as of 2026; check current pricing before buying.
 | **Math** | *Preschool Math at Home* by Kate Snow | ~$20 | Made exactly for age 3–5. Five-minute games, no workbook, uses things you own. Reviewers consistently say kids think it's play. |
 | **Handwriting / pre-writing** | *Handwriting Without Tears: Get Set for School* (Pre-K workbook) | ~$15–20 | "Crayon only", multisensory, teaches strokes then capitals in a smart order. Built for active 4-year-olds. |
 | **First books to read** | *Bob Books Set 1: Beginning Readers* | ~$15 | 12 tiny books that use only the sounds she'll learn in Month 2. Finishing a whole book is a huge confidence win. |
-| **Phonics spine (pick one)** | *The Good and the Beautiful Kindergarten Prep* **or** *Logic of English Foundations A* | Free PDF / ~$100 | See comparison below. |
+| **Phonics spine** | *ABC See, Hear, Do* Level 1 (Stefanie Hohl) | ~$15–20 | Letters in groups of 4–5 with a picture + hand motion, then CVC words from just those letters. The plan in this repo follows it. |
+| **Optional extra spine** | *The Good and the Beautiful Kindergarten Prep* **or** *Logic of English Foundations A* | Free PDF / ~$100 | Only if you want more lesson scripting. See comparison below. |
 | **Free app** | Khan Academy Kids | Free | No ads, no purchases, covers reading and math, genuinely well designed. |
 | **Tools** | Magnetic letters (lowercase!), cookie sheet, playdough, chalk, tweezers/tongs, dice, pom-poms, index cards | ~$20–30 | Used in almost every activity in this guide. |
 
@@ -26,6 +27,13 @@ prices as of 2026; check current pricing before buying.
 Ayah already knows letter names, so the job is: **letter names → letter sounds → hearing sounds blend
 (orally) → blending printed 3-letter words → reading little books.** Any program you choose should do
 those steps in that order. All of these do.
+
+### ABC See, Hear, Do — Level 1 (top pick, and what this plan follows)
+
+- **What it is:** A ~$15–20 picture book (26 lessons, one per letter) that teaches each capital letter's sound with an animal picture and a hand motion. Letters come **in groups of 4–5, not A to Z**, and after every group the child sounds out CVC words using only those letters (the first group gets *cat* and *mat*). By the end she has read 55 words, and a review page adds 48 more. Level 2 does the same with lowercase; later levels add blends, digraphs, and sight words. There's also a matching activity guide, coloring book, and writing-practice book per level.
+- **Pros:** Cheap. Multisensory (see, hear, do) so it suits a wiggly 4-year-old. Blending starts in the first week, which keeps her motivated. Simple enough that you don't need a teacher's manual.
+- **Cons:** It's a book, not a full program: no games, no writing, no math. That's what this repo adds around it. Do one letter a day and the group's words all week; don't rush through the book in a fortnight.
+- **Verdict:** Use it as the phonics spine. Buy Level 2 (lowercase) around Week 10.
 
 ### The Good and the Beautiful (TGTB) — Preschool and Kindergarten Prep
 
@@ -125,6 +133,8 @@ You do **not** need a drawing curriculum at 4. Drawing *is* handwriting prep: ev
 
 ## Sources consulted
 
+- [Cathy Duffy Reviews — ABC See, Hear, Do series](https://cathyduffyreviews.com/homeschool-reviews-core-curricula/phonics-reading/phonics-reading-programs/abc-see-hear-do-series)
+- [Rainbow Resource — ABC See, Hear, Do Level 1](https://www.rainbowresource.com/047402.html)
 - [Cathy Duffy Reviews — The Good and the Beautiful Kindergarten Prep](https://cathyduffyreviews.com/homeschool-reviews-core-curricula/phonics-reading/reading-readiness/the-good-and-the-beautiful-kindergarten-prep-course-book)
 - [Cathy Duffy Reviews — The Good and the Beautiful Preschool Course](https://cathyduffyreviews.com/component/content/article/the-good-and-the-beautiful-preschool-course?catid=34%3Aearly-learning-preschool&Itemid=119)
 - [The Good and the Beautiful — Choose your Littles course](https://www.goodandbeautiful.com/pages/choose-littles)

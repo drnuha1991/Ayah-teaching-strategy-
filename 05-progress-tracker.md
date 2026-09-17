@@ -5,16 +5,17 @@ It's fine, and normal, to have unticked boxes at the end of 12 weeks. Repeat the
 
 ## Letter sounds
 
-Say the sound (not the name) for lowercase letters, quickly:
+Say the sound (not the name) quickly, capitals first (printable version: `printables/checklists.pdf`, page 1):
 
 | Group | Letters | Solid? |
 |---|---|---|
-| Week 1 | s a t p | ☐ |
-| Week 2 | i n m d | ☐ |
-| Week 3 | g o c k | ☐ |
-| Week 4 | e u r h b | ☐ |
-| Week 5 | f l j v | ☐ |
-| Week 6 | w x y z q | ☐ |
+| Week 1 | A B C T M | ☐ |
+| Week 2 | S I R P | ☐ |
+| Week 3 | E N D H | ☐ |
+| Week 4 | O G F L | ☐ |
+| Week 5 | U J W K | ☐ |
+| Week 6 | V X Y Z Q | ☐ |
+| Week 11+ | lowercase a–z, matched to capitals | ☐ |
 
 Practice pile (letters that keep slipping): ____________________
 
@@ -29,12 +30,12 @@ Practice pile (letters that keep slipping): ____________________
 
 ## Blending printed words
 
-- ☐ Blends *-at* family with help
-- ☐ Blends short-a words (at, an, ap, am, ad, ag)
-- ☐ Blends short-i words
-- ☐ Blends short-o words
-- ☐ Blends short-u words
-- ☐ Blends short-e words
+- ☐ Week 1 words: cat, mat, bat, tab, cab, at, am
+- ☐ Week 2 words: sit, sip, rat, sat, bit, rib, map, cap
+- ☐ Week 3 words: hen, pen, ten, bed, red, hat, man, dad
+- ☐ Week 4 words: dog, log, hot, hop, top, fan, fin, pig
+- ☐ Week 5 words: sun, run, bug, hug, jam, jet, wet, kit
+- ☐ Week 6 words: van, box, fox, six, yes, zip, quit
 - ☐ Reads mixed CVC words (5 in a row, mostly alone)
 - ☐ Knows heart words: the, a, I, is, to, and
 

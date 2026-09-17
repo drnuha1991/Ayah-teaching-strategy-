@@ -1,0 +1,307 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Ayah weekly plans</title><style>
+@page { size: Letter portrait; margin: 0.45in 0.5in; }
+* { box-sizing: border-box; }
+body { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; color: #222; margin: 0; font-size: 10.2pt; line-height: 1.28; }
+.page { page-break-after: always; height: 10.1in; display: flex; flex-direction: column; }
+.page:last-child { page-break-after: auto; }
+h1 { font-size: 20pt; margin: 0; letter-spacing: .5px; }
+.head { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3px solid #222; padding-bottom: 4px; margin-bottom: 8px; }
+.head .sub { font-size: 11pt; color: #555; }
+.head .date { font-size: 9pt; color: #555; }
+.letters { display: flex; gap: 8px; margin: 4px 0 6px; align-items: center; }
+.letters .box { width: 0.72in; height: 0.72in; border: 2.5px solid #222; border-radius: 8px; font-size: 30pt; font-weight: bold; display: flex; align-items: center; justify-content: center; }
+.letters .box.small { font-size: 18pt; }
+.letters .sounds { font-size: 9.5pt; color: #333; margin-left: 6px; }
+.letters .sounds .note { font-size: 8pt; color: #777; display:block; margin-top:3px; }
+.words { border: 1.5px dashed #888; border-radius: 6px; padding: 5px 8px; margin-bottom: 8px; font-size: 12pt; letter-spacing: .3px; }
+.words b { font-size: 9pt; color: #555; letter-spacing: 0; margin-right: 6px; text-transform: uppercase; }
+.grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+.card { border: 1.5px solid #222; border-radius: 8px; padding: 6px 8px; }
+.card h2 { font-size: 10.5pt; margin: 0 0 3px; text-transform: uppercase; letter-spacing: .6px; border-bottom: 1px solid #ccc; padding-bottom: 2px; }
+.card ul { margin: 0; padding-left: 14px; }
+.card li { margin-bottom: 2px; }
+.play { border: 2px solid #222; border-radius: 8px; padding: 6px 8px; background: #f3f3f3; margin-bottom: 8px; }
+.play b { text-transform: uppercase; letter-spacing: .6px; font-size: 9.5pt; }
+table.days { width: 100%; border-collapse: collapse; margin-top: auto; }
+table.days th, table.days td { border: 1.2px solid #222; padding: 3px 5px; text-align: center; font-size: 9.5pt; }
+table.days th { background: #e8e8e8; }
+table.days td.row { text-align: left; font-weight: bold; width: 1.55in; }
+table.days td.row small { font-weight: normal; color: #666; display:block; font-size: 8pt; }
+table.days td .cb { display:inline-block; width: 0.26in; height: 0.26in; border: 1.5px solid #222; border-radius: 4px; }
+.foot { display:flex; justify-content: space-between; font-size: 8.5pt; color: #555; margin-top: 5px; }
+.rule { font-weight: bold; color: #222; }
+/* checklists */
+.chk h1 { font-size: 22pt; }
+.groups { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+.group { border: 1.5px solid #222; border-radius: 8px; padding: 6px 8px; }
+.group h2 { margin: 0 0 4px; font-size: 10pt; color: #555; text-transform: uppercase; }
+.lrow { display:flex; align-items:center; gap: 8px; margin: 4px 0; }
+.lrow .L { width: 0.5in; font-size: 22pt; font-weight: bold; text-align:center; }
+.lrow .cb { width: 0.26in; height: 0.26in; border: 1.5px solid #222; border-radius: 4px; display:inline-block; }
+.lrow .lbl { font-size: 8pt; color: #666; width: 0.6in; }
+.wordgrid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
+.wordgrid .w { border: 1.5px solid #222; border-radius: 6px; padding: 5px 4px; display:flex; align-items:center; gap:6px; font-size: 13pt; font-weight: bold; }
+.wordgrid .w .cb { width: 0.24in; height: 0.24in; border: 1.5px solid #222; border-radius: 4px; flex: none; }
+.wordgrid .w.blank { border-style: dashed; color:#aaa; font-weight: normal; font-size: 9pt; }
+.list li { margin-bottom: 6px; list-style: none; display:flex; align-items:center; gap:8px; font-size: 11pt; }
+.list .cb { width: 0.28in; height: 0.28in; border: 1.5px solid #222; border-radius: 4px; display:inline-block; flex:none; }
+.list { padding-left: 0; margin: 0; }
+.two { display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+table.stick { width:100%; border-collapse: collapse; margin-top: 8px; }
+table.stick th, table.stick td { border: 1.5px solid #222; text-align:center; }
+table.stick th { background:#e8e8e8; padding: 6px; font-size: 11pt; }
+table.stick td { height: 0.95in; font-size: 11pt; font-weight: bold; }
+table.stick td.row { width: 1.2in; }
+.big { font-size: 12pt; }
+.caps { display:grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.caps .c { border:1.5px solid #222; border-radius: 6px; height: 0.62in; display:flex; align-items:center; justify-content:space-between; padding: 0 6px; font-size: 20pt; font-weight:bold; }
+.caps .c .cb { width:0.24in; height:0.24in; border:1.5px solid #222; border-radius:4px; }
+.hint { color:#666; font-size: 9pt; margin: 2px 0 8px; }
+</style></head><body>
+<div class="page">
+  <div class="head">
+    <div><h1>Week 1: A B C T M</h1><div class="sub">First sounds, first words</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box">A</div><div class="box">B</div><div class="box">C</div><div class="box">T</div><div class="box">M</div><div class="sounds">A = /a/ apple · B = /b/ · C = /k/ · T = /t/ · M = /mmm/<span class="note">Check against your ABC See, Hear, Do book. If its next group differs, use the book's letters and words.</span></div></div>
+  <div class="words"><b>Words this week</b>at &nbsp;·&nbsp; am &nbsp;·&nbsp; cat &nbsp;·&nbsp; mat &nbsp;·&nbsp; bat &nbsp;·&nbsp; tab &nbsp;·&nbsp; cab &nbsp;·&nbsp; tam</div>
+  <div class="grid">
+    <div class="card"><h2>Sounds &amp; reading</h2><ul><li>1 new letter a day: show the book page, say the sound, do the hand motion.</li><li>Pure sounds, no 'uh' (say /mmm/ not 'muh').</li><li>Day 4–5: build CAT with magnets, slide finger, 'c-a-t… cat!' She copies.</li><li>Robot talk all week: 'pass the c-u-p.'</li></ul></div>
+    <div class="card"><h2>Hands &amp; writing</h2><ul><li>Playdough squeeze, tweezers + pom-poms, chalk lines.</li><li>Strokes: big line down, line across (salt tray, easel).</li><li>HWT: first stroke pages, crayon only.</li></ul></div>
+    <div class="card"><h2>Math</h2><ul><li>Touch-and-count snacks to 5: 'so how many?'</li><li>Dot cards 1–3: 'don't count, just look!'</li><li>Preschool Math at Home: first 3–4 activities.</li></ul></div>
+  </div>
+  <div class="play"><b>Play of the week:</b> Sound treasure hunt: hide 5 things starting with /m/ or /t/. Find, name, say the sound.</div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div>
+<div class="page">
+  <div class="head">
+    <div><h1>Week 2: S I R P</h1><div class="sub">Nine letters, lots of words</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box">S</div><div class="box">I</div><div class="box">R</div><div class="box">P</div><div class="sounds">S = /sss/ · I = /i/ igloo · R = /rrr/ · P = /p/<span class="note">Check against your ABC See, Hear, Do book. If its next group differs, use the book's letters and words.</span></div></div>
+  <div class="words"><b>Words this week</b>sit &nbsp;·&nbsp; sip &nbsp;·&nbsp; tip &nbsp;·&nbsp; pit &nbsp;·&nbsp; rip &nbsp;·&nbsp; rat &nbsp;·&nbsp; sat &nbsp;·&nbsp; bit &nbsp;·&nbsp; rib &nbsp;·&nbsp; tap &nbsp;·&nbsp; map &nbsp;·&nbsp; cap &nbsp;·&nbsp; pat &nbsp;·&nbsp; rim &nbsp;·&nbsp; Sam &nbsp;·&nbsp; Tim</div>
+  <div class="grid">
+    <div class="card"><h2>Sounds &amp; reading</h2><ul><li>1 new letter a day, review all 9 in a 2-minute flash race.</li><li>Blend 3–5 words a day on the cookie sheet. Swap one letter: sat→sit→sip→tip.</li><li>Ear game: 'say *pig* like a robot' (p-i-g).</li></ul></div>
+    <div class="card"><h2>Hands &amp; writing</h2><ul><li>Circles and crosses in shaving cream / salt tray.</li><li>Capitals L, F, E: build with sticks → chalk → wet-dry-try → 1 HWT row.</li><li>Short crayons only (snap them) for finger grip.</li></ul></div>
+    <div class="card"><h2>Math</h2><ul><li>Line up 10 toys, count touching each. 'So there are ___.'</li><li>Count backward from 5 while jumping.</li><li>PMAH next activities.</li></ul></div>
+  </div>
+  <div class="play"><b>Play of the week:</b> Robot dinner: every request at one meal is in robot talk. She guesses the word.</div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div>
+<div class="page">
+  <div class="head">
+    <div><h1>Week 3: E N D H</h1><div class="sub">Short e and lots of families</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box">E</div><div class="box">N</div><div class="box">D</div><div class="box">H</div><div class="sounds">E = /e/ egg · N = /nnn/ · D = /d/ · H = /h/ (quiet puff)<span class="note">Check against your ABC See, Hear, Do book. If its next group differs, use the book's letters and words.</span></div></div>
+  <div class="words"><b>Words this week</b>hen &nbsp;·&nbsp; pen &nbsp;·&nbsp; ten &nbsp;·&nbsp; den &nbsp;·&nbsp; net &nbsp;·&nbsp; bed &nbsp;·&nbsp; red &nbsp;·&nbsp; pet &nbsp;·&nbsp; met &nbsp;·&nbsp; hat &nbsp;·&nbsp; ham &nbsp;·&nbsp; had &nbsp;·&nbsp; hid &nbsp;·&nbsp; him &nbsp;·&nbsp; hit &nbsp;·&nbsp; dip &nbsp;·&nbsp; did &nbsp;·&nbsp; nap &nbsp;·&nbsp; man &nbsp;·&nbsp; can &nbsp;·&nbsp; pan &nbsp;·&nbsp; dad &nbsp;·&nbsp; sad &nbsp;·&nbsp; mad</div>
+  <div class="grid">
+    <div class="card"><h2>Sounds &amp; reading</h2><ul><li>1 letter a day; 13 letters now. Sound review as 'trick the puppet'.</li><li>Word families: -en (hen pen ten den), -at (hat cat mat bat), -an (man can pan).</li><li>Short-e is the hardest to hear: use the 'egg' hand motion every time.</li><li>She reads 3 words to Teddy each day.</li></ul></div>
+    <div class="card"><h2>Hands &amp; writing</h2><ul><li>Capitals H, T, I (all straight lines).</li><li>Air-write huge letters with the whole arm, eyes closed.</li><li>Cutting practice: fringe on a paper strip.</li></ul></div>
+    <div class="card"><h2>Math</h2><ul><li>Dice grab: roll, grab that many blocks, 'don't count, just look' (1–4).</li><li>Two piles of grapes: 'which has more? Line them up to check.'</li><li>PMAH comparing activities.</li></ul></div>
+  </div>
+  <div class="play"><b>Play of the week:</b> Letter-sound hopscotch: chalk 6 letters in squares. Jump and say the sound. 'Jump to the one that says /h/!'</div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div>
+<div class="page">
+  <div class="head">
+    <div><h1>Week 4: O G F L</h1><div class="sub">Short o + check-in</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box">O</div><div class="box">G</div><div class="box">F</div><div class="box">L</div><div class="sounds">O = /o/ octopus · G = /g/ · F = /fff/ · L = /lll/<span class="note">Check against your ABC See, Hear, Do book. If its next group differs, use the book's letters and words.</span></div></div>
+  <div class="words"><b>Words this week</b>dog &nbsp;·&nbsp; log &nbsp;·&nbsp; fog &nbsp;·&nbsp; hot &nbsp;·&nbsp; hop &nbsp;·&nbsp; top &nbsp;·&nbsp; mop &nbsp;·&nbsp; pot &nbsp;·&nbsp; cot &nbsp;·&nbsp; dot &nbsp;·&nbsp; not &nbsp;·&nbsp; got &nbsp;·&nbsp; fan &nbsp;·&nbsp; fat &nbsp;·&nbsp; fit &nbsp;·&nbsp; fin &nbsp;·&nbsp; fed &nbsp;·&nbsp; leg &nbsp;·&nbsp; lap &nbsp;·&nbsp; lip &nbsp;·&nbsp; lid &nbsp;·&nbsp; big &nbsp;·&nbsp; dig &nbsp;·&nbsp; pig &nbsp;·&nbsp; bag</div>
+  <div class="grid">
+    <div class="card"><h2>Sounds &amp; reading</h2><ul><li>1 letter a day; 17 letters. Check-in on Friday: flash all 17, put any wobbly ones on the 'practice pile'.</li><li>Blend 5 words a day, mix vowels: dog, fan, pig, bed, sit.</li><li>Word swat: 6 words on the wall, say one, she swats and reads it.</li></ul></div>
+    <div class="card"><h2>Hands &amp; writing</h2><ul><li>Capitals U, C, O (curves are ready now).</li><li>Bath crayons on the tub wall.</li><li>Name: model A-Y-A-H, she traces, then tries.</li></ul></div>
+    <div class="card"><h2>Math</h2><ul><li>Numeral cards 1–5 matched to dot cards and fingers.</li><li>Number hunt: find a '3' on the clock, remote, a book page.</li><li>Count to 15 on the stairs.</li></ul></div>
+  </div>
+  <div class="play"><b>Play of the week:</b> Sound sorting bins: two bins, two letters. Sort toys by first sound (pig, pen, pot → P; dog, doll → D).</div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div>
+<div class="page">
+  <div class="head">
+    <div><h1>Week 5: U J W K</h1><div class="sub">Short u + all five vowels</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box">U</div><div class="box">J</div><div class="box">W</div><div class="box">K</div><div class="sounds">U = /u/ umbrella · J = /j/ · W = /w/ · K = /k/<span class="note">Check against your ABC See, Hear, Do book. If its next group differs, use the book's letters and words.</span></div></div>
+  <div class="words"><b>Words this week</b>sun &nbsp;·&nbsp; run &nbsp;·&nbsp; fun &nbsp;·&nbsp; bun &nbsp;·&nbsp; nut &nbsp;·&nbsp; cut &nbsp;·&nbsp; cup &nbsp;·&nbsp; up &nbsp;·&nbsp; bug &nbsp;·&nbsp; hug &nbsp;·&nbsp; mug &nbsp;·&nbsp; rug &nbsp;·&nbsp; jug &nbsp;·&nbsp; jam &nbsp;·&nbsp; jet &nbsp;·&nbsp; job &nbsp;·&nbsp; jog &nbsp;·&nbsp; wet &nbsp;·&nbsp; web &nbsp;·&nbsp; wig &nbsp;·&nbsp; win &nbsp;·&nbsp; wag &nbsp;·&nbsp; kit &nbsp;·&nbsp; kid</div>
+  <div class="grid">
+    <div class="card"><h2>Sounds &amp; reading</h2><ul><li>1 letter a day; 21 letters. All five vowels known: sing the vowel song with hand signs.</li><li>Word-family flip book for -ug and -un.</li><li>Start tiny 2-word phrases on the cookie sheet: BIG DOG, WET CAT.</li></ul></div>
+    <div class="card"><h2>Hands &amp; writing</h2><ul><li>Capitals Q, G, S (S in the salt tray many times first).</li><li>Rainbow letters: trace one big letter in 5 colors.</li><li>1 HWT row per letter, then stop.</li></ul></div>
+    <div class="card"><h2>Math</h2><ul><li>Fingers: 'show me 3, hide 1, how many now?' (bonds of 3 and 4).</li><li>'You have 2 crackers, I give you 1 more. Now?'</li><li>Domino match: find two sides with the same dots.</li></ul></div>
+  </div>
+  <div class="play"><b>Play of the week:</b> Word-family flip book: staple cards so the first letter flips: _UG → bug, hug, mug, rug, jug.</div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div>
+<div class="page">
+  <div class="head">
+    <div><h1>Week 6: V X Y Z Q</h1><div class="sub">All 26 done + first Bob Book</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box">V</div><div class="box">X</div><div class="box">Y</div><div class="box">Z</div><div class="box">Q</div><div class="sounds">V = /vvv/ · X = /ks/ (end of box) · Y = /y/ · Z = /zzz/ · Qu = /kw/<span class="note">Check against your ABC See, Hear, Do book. If its next group differs, use the book's letters and words.</span></div></div>
+  <div class="words"><b>Words this week</b>van &nbsp;·&nbsp; vet &nbsp;·&nbsp; box &nbsp;·&nbsp; fox &nbsp;·&nbsp; six &nbsp;·&nbsp; wax &nbsp;·&nbsp; mix &nbsp;·&nbsp; yes &nbsp;·&nbsp; yet &nbsp;·&nbsp; yak &nbsp;·&nbsp; yum &nbsp;·&nbsp; zip &nbsp;·&nbsp; zap &nbsp;·&nbsp; quit &nbsp;·&nbsp; quiz</div>
+  <div class="grid">
+    <div class="card"><h2>Sounds &amp; reading</h2><ul><li>Finish the alphabet. Friday: big review of all 26 sounds (2 minutes, race the timer).</li><li>Blend 5 mixed words a day from the book's review/challenge list.</li><li>Friday: Bob Books Set 1, Book 1 'Mat'. Finger under each word. Celebrate!</li></ul></div>
+    <div class="card"><h2>Hands &amp; writing</h2><ul><li>Capitals J, D, P (frog-jump letters: start at the top, jump back up).</li><li>Write her name on a card for the fridge.</li><li>Tweezers + muffin tin counting (hands + math).</li></ul></div>
+    <div class="card"><h2>Math</h2><ul><li>Five-frame with pom-poms: 'how many? how many empty?'</li><li>Numeral cards 6–10 with dot cards.</li><li>Subitize to 5 with finger flash.</li></ul></div>
+  </div>
+  <div class="play"><b>Play of the week:</b> Blending ramp: 3 letter cards beside a cardboard ramp. Roll a car past them faster and faster until the word 'pops out'.</div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div>
+<div class="page">
+  <div class="head">
+    <div><h1>Week 7: Review words</h1><div class="sub">Bob Books 1–3 + heart words</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box small">all</div><div class="box small">26</div><div class="sounds">Review any letters on the practice pile. Heart words: THE, A (we just know these by heart).</div></div>
+  <div class="words"><b>Words this week</b>the &nbsp;·&nbsp; a &nbsp;·&nbsp; cat &nbsp;·&nbsp; sat &nbsp;·&nbsp; mat &nbsp;·&nbsp; sam &nbsp;·&nbsp; rag &nbsp;·&nbsp; cab &nbsp;·&nbsp; hot &nbsp;·&nbsp; dog &nbsp;·&nbsp; fun &nbsp;·&nbsp; pig &nbsp;·&nbsp; wet &nbsp;·&nbsp; jam &nbsp;·&nbsp; fox &nbsp;·&nbsp; six &nbsp;·&nbsp; zip &nbsp;·&nbsp; bed</div>
+  <div class="grid">
+    <div class="card"><h2>Sounds &amp; reading</h2><ul><li>Daily: 5 mixed words on the cookie sheet, then one Bob Book (new or reread).</li><li>Reread yesterday's book first: it's a warm-up, not a test.</li><li>Build a sentence with magnets: THE CAT SAT. Point and slide.</li></ul></div>
+    <div class="card"><h2>Hands &amp; writing</h2><ul><li>Capitals B, R, N.</li><li>Draw a cat, you write CAT lightly, she traces it.</li><li>Wet-dry-try any wobbly letters.</li></ul></div>
+    <div class="card"><h2>Math</h2><ul><li>Count to 20 while walking / on a hundred chart.</li><li>Shape hunt: find 3 circles, 3 rectangles. Build a triangle with sticks: 'how many sides?'</li><li>PMAH shape activities.</li></ul></div>
+  </div>
+  <div class="play"><b>Play of the week:</b> Secret word treasure hunt: 5 cards (BED, MAT, CUP, TUB, BOX). Each word she reads leads to the next clue. Sticker at the end.</div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div>
+<div class="page">
+  <div class="head">
+    <div><h1>Week 8: Sentences</h1><div class="sub">Bob Books 4–6 + I, IS</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box">I</div><div class="box small">IS</div><div class="sounds">Heart words: I, IS. Review THE, A.</div></div>
+  <div class="words"><b>Words this week</b>I &nbsp;·&nbsp; is &nbsp;·&nbsp; the &nbsp;·&nbsp; a &nbsp;·&nbsp; big &nbsp;·&nbsp; dog &nbsp;·&nbsp; can &nbsp;·&nbsp; sit &nbsp;·&nbsp; hop &nbsp;·&nbsp; run &nbsp;·&nbsp; the cat is big &nbsp;·&nbsp; I can hop &nbsp;·&nbsp; the dog is wet</div>
+  <div class="grid">
+    <div class="card"><h2>Sounds &amp; reading</h2><ul><li>Bob Books 4–6 (one new, one reread, each day).</li><li>Sentence strips: THE PIG CAN HOP. She reads and acts it out.</li><li>Whisper-shout reading: same 5 words whispered, shouted, squeaky.</li></ul></div>
+    <div class="card"><h2>Hands &amp; writing</h2><ul><li>Capitals M, K, A.</li><li>Numerals 1, 2, 3 ('1 is a big line down').</li><li>Sticker dots along a letter's path.</li></ul></div>
+    <div class="card"><h2>Math</h2><ul><li>5 pom-poms, hide some under a cup: 'how many are hiding?' (bonds of 5).</li><li>Roll and add: two dice, take that many blocks, count the tower.</li><li>Snack math: '2 apple slices and 3 more, how many?'</li></ul></div>
+  </div>
+  <div class="play"><b>Play of the week:</b> Sentence strips: write 5 silly sentences (THE CAT CAN HOP). She reads one, then acts it out.</div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div>
+<div class="page">
+  <div class="head">
+    <div><h1>Week 9: Stories about me</h1><div class="sub">Bob Books 7–9 + TO, AND</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box small">TO</div><div class="box small">AND</div><div class="sounds">Heart words: TO, AND. Review THE, A, I, IS.</div></div>
+  <div class="words"><b>Words this week</b>to &nbsp;·&nbsp; and &nbsp;·&nbsp; the cat and the dog &nbsp;·&nbsp; I run to the bed &nbsp;·&nbsp; Ayah can hop &nbsp;·&nbsp; Ayah is 4</div>
+  <div class="grid">
+    <div class="card"><h2>Sounds &amp; reading</h2><ul><li>Bob Books 7–9.</li><li>Story cards about her: 'AYAH CAN RUN. AYAH IS 4.' She reads and keeps them in a 'my books' envelope.</li><li>Progressive Phonics free books: you read black words, she reads red.</li></ul></div>
+    <div class="card"><h2>Hands &amp; writing</h2><ul><li>Capitals V, W, X.</li><li>Numerals 4, 5.</li><li>Label her drawings: DOG, SUN, MOM.</li></ul></div>
+    <div class="card"><h2>Math</h2><ul><li>'5 crackers, eat 2, how many left?' (taking away within 5).</li><li>Countdown rocket: 5-4-3-2-1 blast off with fingers.</li><li>'One less' with toy cars driving away.</li></ul></div>
+  </div>
+  <div class="play"><b>Play of the week:</b> Reading picnic: blanket, snacks, a pile of Bob Books. Every stuffed animal gets one page read to it.</div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div>
+<div class="page">
+  <div class="head">
+    <div><h1>Week 10: Label the house</h1><div class="sub">Bob Books 10–12</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box small">Set</div><div class="box">1</div><div class="sounds">Finish Bob Books Set 1. Optional: start Set 2.</div></div>
+  <div class="words"><b>Words this week</b>bed &nbsp;·&nbsp; cup &nbsp;·&nbsp; pan &nbsp;·&nbsp; mat &nbsp;·&nbsp; box &nbsp;·&nbsp; tub &nbsp;·&nbsp; fan &nbsp;·&nbsp; rug &nbsp;·&nbsp; lid &nbsp;·&nbsp; pot</div>
+  <div class="grid">
+    <div class="card"><h2>Sounds &amp; reading</h2><ul><li>Bob Books 10–12. Let her read a familiar one alone to Teddy while you 'cook'.</li><li>Sticky notes with words on the real objects; she reads them all week.</li><li>She 'teaches' you one word a day.</li></ul></div>
+    <div class="card"><h2>Hands &amp; writing</h2><ul><li>Capitals Y, Z. All 26 done!</li><li>Numerals 6, 7.</li><li>Alphabet poster: she writes a few letters a day.</li></ul></div>
+    <div class="card"><h2>Math</h2><ul><li>Bead / sticker patterns: red-blue-red-blue, then red-red-blue. She continues yours, then makes one for you.</li><li>Line up spoon, fork, crayon: shortest to longest.</li><li>Clap-stomp body patterns.</li></ul></div>
+  </div>
+  <div class="play"><b>Play of the week:</b> Label the house: 10 sticky notes with CVC words stuck on the real things (BED, CUP, PAN, TUB, BOX).</div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div>
+<div class="page">
+  <div class="head">
+    <div><h1>Week 11: Little letters</h1><div class="sub">Lowercase begins + board games</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box">a</div><div class="box">b</div><div class="box">c</div><div class="box">t</div><div class="box">m</div><div class="sounds">Same sounds, small letters. Match each lowercase magnet to its capital: A-a, B-b, C-c, T-t, M-m.</div></div>
+  <div class="words"><b>Words this week</b>cat &nbsp;·&nbsp; mat &nbsp;·&nbsp; bat &nbsp;·&nbsp; tab &nbsp;·&nbsp; cab &nbsp;·&nbsp; at &nbsp;·&nbsp; am &nbsp;·&nbsp; sit &nbsp;·&nbsp; sip &nbsp;·&nbsp; rat</div>
+  <div class="grid">
+    <div class="card"><h2>Sounds &amp; reading</h2><ul><li>Lowercase, same groups as the book, 5 letters this week. Match capital ↔ lowercase magnets.</li><li>Read the Week 1–2 words again in lowercase.</li><li>Reread favorite Bob Books; try Set 2 if she wants.</li></ul></div>
+    <div class="card"><h2>Hands &amp; writing</h2><ul><li>Review any wobbly capitals (circle the best one on each row).</li><li>Numerals 8, 9, 10.</li><li>Write one whole word alone: CAT.</li></ul></div>
+    <div class="card"><h2>Math</h2><ul><li>Show '3 + 2' on cards with pom-poms under each number; count all. Just looking, no writing.</li><li>Hundred chart: point and count to 30. Cover a number: 'which one is hiding?'</li><li>Board game every day this week.</li></ul></div>
+  </div>
+  <div class="play"><b>Play of the week:</b> Board-game week: Count Your Chickens or Hi Ho! Cherry-O every day instead of a math activity.</div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div>
+<div class="page">
+  <div class="head">
+    <div><h1>Week 12: Celebration</h1><div class="sub">Check-in week, no new content</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box">★</div><div class="sounds">Use the checklists: tick what is solid, note what needs one more week.</div></div>
+  <div class="words"><b>Words this week</b>Reread favorites &nbsp;·&nbsp; Make a 'books I can read' list &nbsp;·&nbsp; Read to a grandparent on video</div>
+  <div class="grid">
+    <div class="card"><h2>Sounds &amp; reading</h2><ul><li>No new letters or words. Reread, relax, show off.</li><li>Read one Bob Book to someone on a video call.</li><li>She picks the game every day.</li></ul></div>
+    <div class="card"><h2>Hands &amp; writing</h2><ul><li>Write a card: I LOVE YOU. AYAH.</li><li>That's the whole writing goal this week.</li></ul></div>
+    <div class="card"><h2>Math</h2><ul><li>Play every math game she loved. Ask her to teach YOU the rules.</li><li>Explaining is the deepest learning.</li></ul></div>
+  </div>
+  <div class="play"><b>Play of the week:</b> Certificate day: make a paper certificate, she signs it, take a photo with her stack of Bob Books.</div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div>
+<div class="page">
+  <div class="head">
+    <div><h1>Week ____: ______________________</h1><div class="sub">Blank week (repeat a week, or plan your own)</div></div>
+    <div class="date">Ayah's plan &nbsp;·&nbsp; week of ____________</div>
+  </div>
+  <div class="letters"><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="box"></div><div class="sounds">Sounds: _______________________________________<span class="note">Write the letters from the book's next group in the boxes.</span></div></div>
+  <div class="words"><b>Words this week</b><br><br></div>
+  <div class="grid">
+    <div class="card" style="min-height:1.9in"><h2>Sounds &amp; reading</h2></div>
+    <div class="card"><h2>Hands &amp; writing</h2></div>
+    <div class="card"><h2>Math</h2></div>
+  </div>
+  <div class="play" style="min-height:0.6in"><b>Play of the week:</b></div>
+  <table class="days">
+    <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+    <tr><td class="row">Sounds &amp; words<small>10–15 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Move!<small>5 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Hands &amp; writing<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Math game<small>10 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr><tr><td class="row">Story time<small>15–20 min</small></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td><td><span class="cb"></span></td></tr>
+  </table>
+  <div class="foot"><span class="rule">Stop before she's done. Bored = switch the game, not the goal.</span><span>Sat + Sun: off. Just story time.</span></div>
+</div></body></html>
