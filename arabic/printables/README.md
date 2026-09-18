@@ -1,13 +1,13 @@
-# Arabic printables
+# المطبوعات العربية
 
-- `all-in-one.pdf` — **everything in one file:** the guide, the 2-page rules sheet, the 12 reading pages, and the writing pages.
-- `guide.pdf` — the guide only (overview, rules, method, 12-week plan, activity bank, tracker).
-- `rules-sheet.pdf` — 2 pages to hang up: every reading rule with examples, sun/moon letters, hamza shapes, little words.
-- `reading-pages.pdf` — 12 pages, one per week. Rows of vowelled words (later sentences and stories) with tick boxes, and a "copy these words" section at the bottom.
-- `writing-pages.pdf` — letter-forms chart, 7 tracing pages (one per letter family), join-the-letters (2), split-the-word, madd hunt, sukoon, tanween triplets, shadda, sun/moon sort, endings, and 2 pages of ruled dictation paper (print more as needed).
+- `الكل-في-ملف-واحد.pdf` — **كل شيء في ملف واحد:** الدليل، ثم ورقة القواعد (صفحتان)، ثم صفحات القراءة الاثنتا عشرة، ثم صفحات الكتابة.
+- `الدليل.pdf` — الدليل وحده (نظرة عامة، القواعد، الطريقة، خطة الاثني عشر أسبوعًا، بنك الأنشطة، متابعة التقدم).
+- `ورقة-القواعد.pdf` — صفحتان للتعليق: كل قاعدة قراءة بأمثلتها، الحروف الشمسية والقمرية، أشكال الهمزة، الكلمات الصغيرة.
+- `صفحات-القراءة.pdf` — ١٢ صفحة، واحدة لكل أسبوع. أسطر كلمات مشكولة (ثم جمل وقصص) مع مربعات تأشير، وفي الأسفل فقرة «اكتبي».
+- `صفحات-الكتابة.pdf` — جدول أشكال الحروف، ٧ صفحات تتبّع (واحدة لكل مجموعة)، صِلي الحروف (٢)، فرّقي الحروف، أين حرف المد، أين السكون، ثلاثيات التنوين، ضاعفيه، قمرية أم شمسية، النهايات، وورقتا إملاء مسطّرتان (اطبعي منهما ما تحتاجين).
 
-The Arabic font is [Amiri](https://github.com/aliftype/amiri) (SIL Open Font License, in `fonts/`), a clear Naskh with well-placed tashkeel.
+الخط العربي المستخدم هو [الأميري](https://github.com/aliftype/amiri) (رخصة الخطوط المفتوحة، في مجلد `fonts/`)، خط نسخ واضح بتشكيل مضبوط.
 
-**To change words or add pages:** edit `content.py` (all words, stories and word lists) or `build_arabic.py` (layout), then run `./build.sh`.
-It needs Python 3 with `markdown` and `pypdfium2`, and Chromium (set `CHROME=/path/to/chromium` if it isn't at the default path).
-The `.html` files are the print sources; you can also open them in a browser and print from there.
+**لتغيير الكلمات أو إضافة صفحات:** عدّلي `content.py` (كل الكلمات والقصص والقوائم) أو `build_arabic.py` (التنسيق)، ثم شغّلي `./build.sh`.
+يحتاج التشغيل إلى بايثون ٣ مع حزمتي `markdown` و `pypdfium2`، وإلى متصفح كروميوم (حدّدي مساره بالمتغير `CHROME` إن لم يكن في المسار الافتراضي).
+ملفات `.html` هي مصادر الطباعة؛ يمكنك أيضًا فتحها في المتصفح والطباعة منها مباشرة.

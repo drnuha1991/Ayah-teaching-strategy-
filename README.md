@@ -16,11 +16,11 @@ and can count to 10 how to **blend letters and read, write, and do early math**,
 | [printables/weekly-plans.pdf](printables/weekly-plans.pdf) | **Print and hang:** one page per week (12 weeks + a blank week) with the letters, words, activities, and a Mon–Fri tick grid |
 | [printables/checklists.pdf](printables/checklists.pdf) | **Print and hang:** letter-sounds chart, "Words I Can Read", "Books I Can Read", "Ayah Can Write", "Ayah's Math", and a monthly sticker chart |
 
-## Arabic for the older sister
+## دليل العربية للأخت الكبرى
 
-The [`arabic/`](arabic/README.md) folder is a separate guide for an older child who already knows the Arabic letters with tashkeel and
-needs to learn to **read and write joined words**: the rules of reading in teaching order, a 12-week plan, 12 printable reading pages,
-writing/tracing pages, and a rules cheat sheet. Start with [arabic/README.md](arabic/README.md).
+مجلد [`arabic/`](arabic/README.md) دليل مستقل، مكتوب بالعربية بالكامل، لطفلة أكبر تعرف الحروف بالتشكيل وتحتاج إلى تعلّم
+**قراءة الكلمات المتصلة وكتابتها**: قواعد القراءة بترتيب التعليم، خطة اثني عشر أسبوعًا، ١٢ صفحة قراءة للطباعة،
+صفحات كتابة وتتبّع، وورقة قواعد للتعليق. ابدئي من [arabic/README.md](arabic/README.md).
 
 ## The short version
 
