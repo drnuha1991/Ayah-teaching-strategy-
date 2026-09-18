@@ -16,6 +16,12 @@ and can count to 10 how to **blend letters and read, write, and do early math**,
 | [printables/weekly-plans.pdf](printables/weekly-plans.pdf) | **Print and hang:** one page per week (12 weeks + a blank week) with the letters, words, activities, and a Mon–Fri tick grid |
 | [printables/checklists.pdf](printables/checklists.pdf) | **Print and hang:** letter-sounds chart, "Words I Can Read", "Books I Can Read", "Ayah Can Write", "Ayah's Math", and a monthly sticker chart |
 
+## Arabic for the older sister
+
+The [`arabic/`](arabic/README.md) folder is a separate guide for an older child who already knows the Arabic letters with tashkeel and
+needs to learn to **read and write joined words**: the rules of reading in teaching order, a 12-week plan, 12 printable reading pages,
+writing/tracing pages, and a rules cheat sheet. Start with [arabic/README.md](arabic/README.md).
+
 ## The short version
 
 1. **Buy three things** (about $55 total): *Preschool Math at Home* (Kate Snow), *Handwriting Without Tears: Get Set for School* workbook, and *Bob Books Set 1*. Get a set of **magnetic letters** and a **cookie sheet** too.
